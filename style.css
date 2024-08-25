@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Gupter:wght@400;500;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mate:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mate", serif;
+    /* border: 1px solid red; */
+}
+
+.main-container {
+    width: 100%;
+    height: auto;
+    background-color: #F7F6F9;
+}
+
+.navbar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: #182229;
+}
+
+.navbar span {
+    display: flex;
+    margin-top: 20px;
+}
+
+.navbar span img {
+    width: 14%;
+    position: relative;
+    top: -10px;
+    left: 20px;
+}
+
+.navbar span h2 {
+    font-size: 2.2em;
+    margin-left: 20px;
+    color: white;
+}
+
+
+.navbar span h2:hover {
+    color: gray;
+}
+
+.navbar span hr {
+    margin-left: 20px;
+    height: 45px;
+    color: gray;
+}
+
+.navbar span button {
+    width: 150px;
+    height: 35px;
+    font-size: 1.2em;
+    background-color: #11181D;
+    color: rgb(173, 172, 172);
+    border: none;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+.navbar span button:hover {
+    color: white;
+    background-color: #0b1318;
+}
+
+#btn {
+    width: 42%;
+    height: 80px;
+    border-radius: 60px;
+    position: relative;
+    top: 38px;
+    padding-inline: 30px;
+    font-size: 1.1em;
+    border: 5px solid rgb(249, 246, 246);
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#btn input {
+    width: 50%;
+    height: 70%;
+    font-size: 1.3em;
+    border: none;
+}
+
+#btn input:focus {
+    color: black;
+    visibility: hidden;
+}
+
+#btn i {
+    color: gray;
+    font-size: 1.2em;
+}
+
+.hero-section {
+    width: 100%;
+    height: auto;
+    margin-top: 90px;
+    padding-inline: 140px;
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    grid-template-rows: repeat(12, 440px);
+    gap: 20px;
+}
+
+.box {
+    padding-inline: 20px;
+    padding-block: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+}
+
+
+.box h2 {
+    font-size: 1.6em;
+}
+
+
+.box h2 a:hover {
+    color: gray;
+}
+
+.box h2 a {
+    color: #000;
+    text-decoration: none;
+}
+
+.box span {
+    margin-top: 20px;
+}
+
+.box span a {
+    font-size: 1.2em;
+    margin-left: 10px;
+    color: #5c5c5c;
+    text-decoration: none;
+}
+
+.box span i {
+    font-size: 0.9em;
+}
+
+
+
+.box span a:hover {
+    text-decoration: underline;
+}
+
+.box hr {
+    width: 90%;
+    margin-top: 20px;
+}
+
+.box h4 {
+    font-size: 1em;
+    margin-top: 20px;
+    color: rgb(83, 83, 83);
+}
+
+#au {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+    padding-block: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 3%;
+}
+
+.line {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 10px;
+
+}
+
+.line h3 {
+    font-size: 1.1em;
+    font-weight: 200;
+}
+
+
+
+
+
+/* reponsive start 480px */
+
+
+@media (max-width : 480px) {
+
+    .main-container {
+        width: 100%;
+        height: auto;
+        background-color: #F7F6F9;
+    }
+
+    .navbar {
+        width: 100%;
+        height: auto;
+    }
+
+    .navbar span button {
+        width: 25%;
+        height: 20px;
+        font-size: 0.6em;
+    }
+
+
+    .navbar span button:nth-child(3) {
+        width: 100px;
+    }
+
+    #btn {
+        width: 90%;
+    }
+
+
+    .hero-section {
+        width: 100%;
+        height: auto;
+        display: grid;
+        padding-inline: 20px;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(36, 440px);
+        gap:30px;
+    }
+
+
+    .box span a br {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .line {
+        margin-top:80px;
+    }
+
+    .line h3 {
+        color: gray;
+        font-size: 0.9em;
+    }
+
+
+
+
+}
